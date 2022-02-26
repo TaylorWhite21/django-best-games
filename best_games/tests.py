@@ -11,7 +11,7 @@ class ThingsTests(SimpleTestCase):
 		url =reverse('home')
 		response = self.client.get(url)
 		self.assertTemplateUsed(response, 'home.html')
-	
+
 	def test_about_page_status_code(self):
 		url = reverse('about')
 		response = self.client.get(url)
